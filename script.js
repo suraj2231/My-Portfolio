@@ -135,29 +135,3 @@ scrollBottom.forEach((el)=>observer.observe(el));
 const scrollTop = document.querySelectorAll(".scroll-top");
 scrollTop.forEach((el)=>observer.observe(el));
 
-
-function submitForm() {
-        // Get form data
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var address = document.getElementById("address").value;
-        var phone = document.getElementById("phone").value;
-        var message = document.getElementById("message").value;
-
-        // You can perform additional validation here if needed
-
-        // Example: Send data using Email.js
-        emailjs.send("service_your_service_id", "template_your_template_id", {
-            name: name,
-            email: email,
-            address: address,
-            phone: phone,
-            message: message
-        }).then(function(response) {
-            console.log("Email sent successfully", response);
-            // You can add additional actions or feedback to the user here
-        }, function(error) {
-            console.error("Error sending email", error);
-            // Handle errors or provide feedback to the user
-        });
-    }
