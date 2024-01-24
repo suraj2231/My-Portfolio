@@ -36,7 +36,6 @@ let changeText = ()=>{
 changeText();
 setInterval(changeText,3000)
 
-
 // circle skill
 const circles = document.querySelectorAll('.circle');
 circles.forEach(elem=>{
@@ -71,10 +70,9 @@ function toggleReadMore() {
     }
   }
 
+
 // mix it up in portfolio section
 var mixer = mixitup('.portfolio-gallery');
-
-
 
 
 // active menu
